@@ -1,0 +1,29 @@
+.upload-form {
+  text-align: center;
+  padding: 20px;
+}
+
+.preview-section {
+  margin-top: 20px;
+}
+
+.preview-img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+button {
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
