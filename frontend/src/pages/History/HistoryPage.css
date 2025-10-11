@@ -1,0 +1,80 @@
+.history-container {
+  padding: 2rem;
+}
+
+.history-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.history-table th, .history-table td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.history-table th {
+  background-color: #2a2a2e;
+  font-size: 1rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.history-table td {
+  color: #e0e0e0;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.no-history {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+/* Reusing the loader from the dashboard */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #0095ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+.retry-button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  background-color: var(--accent-blue);
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

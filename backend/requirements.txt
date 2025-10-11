@@ -3,4 +3,9 @@ numpy
 Pillow
 tensorflow
 opencv-python
-flask-cors
+react-router-dom
+react react-dom
+jspdf html2canvas
+firebase-admin
+react-icons
+axios

@@ -1,0 +1,161 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 850px; /* A standard A4-like ratio */
+  max-height: 95vh;
+  overflow-y: auto;
+  border: 1px solid #333;
+}
+
+/* Styles for the content that will be in the PDF */
+.report-container {
+  padding: 40px;
+  background-color: #ffffff; /* White background for the PDF */
+  color: #121212; /* Black text for the PDF */
+}
+
+.report-header {
+  text-align: center;
+  border-bottom: 2px solid #0095ff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.report-main-title {
+  color: #121212;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.report-subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 0;
+  font-weight: 400;
+}
+
+.report-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #0095ff;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+}
+
+.info-grid p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.result-box {
+  background-color: #f4f8ff;
+  border: 1px solid #d9e8ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.result-label {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.result-value {
+  margin: 0;
+  font-weight: bold;
+}
+
+.diagnosis-value {
+  font-size: 2rem;
+  color: #d9534f; /* A color for emphasis */
+}
+
+.confidence-value {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.report-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #0095ff;
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.modal-actions {
+  background-color: #2a2a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.action-button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+}
+
+.action-button.download {
+  background-color: #0095ff;
+  color: white;
+}
+.action-button.download:hover {
+  background-color: #007acc;
+}
+
+.action-button.close {
+  background-color: #555;
+  color: white;
+}
+.action-button.close:hover {
+  background-color: #777;
+}
